@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".UI.AddInstructor">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="257dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Add Instructor"
+        android:textAlignment="center"
+        android:textColor="#6E4214"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="164dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/caudex"
+        android:text="Instructor Name:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/addInstructorName"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/caudex"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/addInstructorPhone"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/caudex"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="164dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/caudex"
+        android:text="Instructor Phone:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addInstructorName" />
+
+    <EditText
+        android:id="@+id/addInstructorEmail"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/caudex"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="164dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/caudex"
+        android:text="Instructor Email:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addInstructorPhone" />
+
+    <Button
+        android:id="@+id/addInstructorSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6B3E3636"
+        android:onClick="onClickSave"
+        android:text="Save Instructor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addInstructorEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

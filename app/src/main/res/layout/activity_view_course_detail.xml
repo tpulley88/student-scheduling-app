@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundimage"
+        tools:context=".UI.ModifyCourse">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="View Course Detail"
+            android:textAlignment="center"
+            android:textColor="#6E4214"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Course Title:"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+        <TextView
+            android:id="@+id/viewCourseTitle"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Start Date:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/viewCourseStartDate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="End Date:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.709"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseStartDate" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="onClickNotifyStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="onClickNotifyEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseStartDate"
+            app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+        <TextView
+            android:id="@+id/viewCourseEndDate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Course Status:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseTitle" />
+
+        <TextView
+            android:id="@+id/viewCourseStatus"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Course Instructor:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseTerm" />
+
+        <TextView
+            android:id="@+id/viewCourseInstructor"
+            android:layout_width="336dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Course Term:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseEndDate" />
+
+        <TextView
+            android:id="@+id/viewCourseTerm"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Notes:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseInstructor" />
+
+        <TextView
+            android:id="@+id/viewCourseNotes"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:gravity="start|top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <Button
+            android:id="@+id/modifyCourseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#6B3E3636"
+            android:onClick="onClickModify"
+            android:text="Modify Course"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseNotes" />
+
+        <Button
+            android:id="@+id/deleteCourseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#6B3E3636"
+            android:onClick="onClickDelete"
+            android:text="Delete Course"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.911"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifyCourseButton" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="shareNotes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseInstructor"
+            app:srcCompat="@drawable/ic_baseline_share" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/caudex"
+            android:text="Share Notes?"
+            android:textAlignment="center"
+            android:textColor="#6E4214"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.803"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCourseInstructor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

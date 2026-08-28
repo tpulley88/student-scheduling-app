@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".UI.SelectTerm">
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Start Date:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Title:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="End Date:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/addNewTermButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#6B393131"
+        android:onClick="onClickAddTerm"
+        android:text="Add New Term"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectTermRV" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="257dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Terms"
+        android:textAlignment="center"
+        android:textColor="#6E4214"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectTermRV"
+        android:layout_width="720dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

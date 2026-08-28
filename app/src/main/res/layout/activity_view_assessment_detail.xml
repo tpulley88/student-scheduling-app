@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:nestedScrollingEnabled="false"
+        tools:context=".UI.ModifyAssessment"
+        android:background="@drawable/backgroundimage"
+        >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="295dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="View Assessment Detail"
+            android:textAlignment="center"
+            android:textColor="#6E4214"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Assessment Title:"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/viewAssessmentTitle"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Start Date:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.743"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/viewAssessmentStartDate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.905"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="End Date:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssessmentStartDate" />
+
+        <TextView
+            android:id="@+id/viewAssessmentEndDate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.905"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Type:"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssessmentTitle" />
+
+        <TextView
+            android:id="@+id/viewAssessmentType"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Term:"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssessmentType" />
+
+        <TextView
+            android:id="@+id/viewAssessmentTerm"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.301"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Course:"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssessmentTerm" />
+
+        <TextView
+            android:id="@+id/viewAssessmentCourse"
+            android:layout_width="336dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/caudex"
+            android:text="Instructor:"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssessmentCourse" />
+
+        <TextView
+            android:id="@+id/viewAssessmentInstructor"
+            android:layout_width="336dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/caudex"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <Button
+            android:id="@+id/modifyAssessmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#6B3E3636"
+            android:onClick="onClickModify"
+            android:text="Modify Assessment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssessmentInstructor" />
+
+        <Button
+            android:id="@+id/deleteAssessmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#6B3E3636"
+            android:onClick="onClickDelete"
+            android:text="Delete Assessment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifyAssessmentButton" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="onClickNotifyEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssessmentStartDate"
+            app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="onClickNotifyStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

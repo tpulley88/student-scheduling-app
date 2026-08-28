@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="TestApp.StudentSchedulingApp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="Student Scheduling"
+        android:roundIcon="@mipmap/ic_launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".UI.AssessmentsByCourse"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Receivers.AssessmentEndReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".Receivers.AssessmentStartReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".Receivers.CourseEndReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".Receivers.CourseStartReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".UI.ViewAssessmentDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ViewCourseDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ViewTermDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UI.CoursesByTerm"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ModifyTerm"
+            android:exported="false"
+            android:parentActivityName=".UI.SelectTerm" />
+        <activity
+            android:name=".UI.SelectInstructor"
+            android:exported="false"
+            android:parentActivityName=".UI.Home" />
+        <activity
+            android:name=".UI.SelectAssessment"
+            android:exported="false"
+            android:parentActivityName=".UI.Home" />
+        <activity
+            android:name=".UI.ModifyCourse"
+            android:exported="false"
+            android:parentActivityName=".UI.SelectCourse" />
+        <activity
+            android:name=".UI.ModifyInstructor"
+            android:exported="false"
+            android:parentActivityName=".UI.SelectInstructor" />
+        <activity
+            android:name=".UI.ModifyAssessment"
+            android:exported="false"
+            android:parentActivityName=".UI.SelectAssessment" />
+        <activity
+            android:name=".UI.SelectTerm"
+            android:exported="false"
+            android:label="Select Term"
+            android:parentActivityName=".UI.Home" />
+        <activity
+            android:name=".UI.SelectCourse"
+            android:exported="false"
+            android:label="Select Course"
+            android:parentActivityName=".UI.Home" />
+        <activity
+            android:name=".UI.AddInstructor"
+            android:exported="false"
+            android:label="Add Instructor"
+            android:parentActivityName=".UI.SelectInstructor" />
+        <activity
+            android:name=".UI.AddAssessment"
+            android:exported="false"
+            android:label="Add Assessment"
+            android:parentActivityName=".UI.SelectAssessment" />
+        <activity
+            android:name=".UI.AddCourse"
+            android:exported="false"
+            android:label="Add Course"
+            android:parentActivityName=".UI.SelectCourse" />
+        <activity
+            android:name=".UI.AddTerm"
+            android:exported="false"
+            android:label="Add Term"
+            android:parentActivityName=".UI.SelectTerm" />
+        <activity
+            android:name=".UI.Overview"
+            android:exported="true"
+            android:parentActivityName=".UI.Home" />
+        <activity
+            android:name=".UI.Home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

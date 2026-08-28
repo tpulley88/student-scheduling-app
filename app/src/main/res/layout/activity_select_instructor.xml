@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".UI.SelectInstructor">
+
+    <Button
+        android:id="@+id/addNewInstructorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#6B393131"
+        android:onClick="onClickAddInstructor"
+        android:text="Add New Instructor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectInstructorRV" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Name:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Email:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Phone:"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="257dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caudex"
+        android:text="Instructors"
+        android:textAlignment="center"
+        android:textColor="#6E4214"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectInstructorRV"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
